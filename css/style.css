@@ -1,0 +1,101 @@
+#main-content {}
+
+#spinner {
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    background: black;
+}
+
+#v-tabs-tab a {
+    color: #FBFBFB;
+}
+
+#v-tabs-tab .active {
+    color: #3B71CA;
+}
+
+#v-tabs-tab a:hover {
+    color: #3B71CA;
+}
+
+#sign-up-btn {
+    transition: .4s;
+}
+
+#sign-up-btn:hover {
+    border: 1px solid #3B71CA !important;
+    background-color: #3B71CA;
+}
+
+.navigation a {
+    position: relative;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #FBFBFB !important;
+    transform-origin: middle;
+    transition: transform .3s;
+    transform: scaleX(0);
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .active::after {
+    transform: scaleX(1);
+}
+
+#loan-tabs .active {
+    color: #000 !important;
+    border: none;
+}
+
+#loan-tabs a:hover {
+    color: #000 !important;
+}
+
+#cards-loan {
+    height: 30vh;
+    border: none;
+}
+
+#id-card {
+    width: 30rem;
+}
+
+@media(max-width: 991px) {
+    #cards-loan {
+        height: 100vh;
+    }
+    #id-card {
+        width: 100%;
+    }
+    #user-dashboard {
+        padding-top: 170px;
+    }
+    #ex1 li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#navigation-admin .active {
+    color: #3B71CA !important;
+}
+
+#sidenav a {
+    font-size: 15px;
+}
+
+#ex1-content {
+    height: fit-content;
+}
